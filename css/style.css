@@ -1,0 +1,92 @@
+@charset "UTF-8";
+header {
+  padding: 0 10x;
+  transition: 0.7s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: chartreuse;
+}
+
+.contenedor-divisas {
+  grid-area: body;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  margin-top: 150px;
+}
+
+.contenedor .contenedor-footer {
+  grid-area: footer;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  margin-top: auto;
+  padding: 1em 0;
+  align-self: flex-end;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 644px) {
+  .contenedor .contenedor-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contenedor .contenedor-footer .redes {
+  display: flex;
+}
+.contenedor .contenedor-footer .redes .tamaño {
+  font-size: 20px;
+}
+.contenedor .contenedor-footer .redes .informacion {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.contenedor .contenedor-footer .redes .informacion .icono-redes {
+  margin-right: 5px;
+}
+.contenedor .contenedor-footer .redes .informacion .sub-redes {
+  color: black;
+  font-family: "Kanit", sans-serif;
+  padding: 0;
+  text-decoration: none;
+}
+.contenedor .contenedor-footer .medios-pago {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+.contenedor .contenedor-footer .medios-pago .tamaño {
+  font-size: 20px;
+}
+
+.margen {
+  margin: 10px 0;
+}
+
+.contenedor {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "header" "productos" "footer";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=style.css.map */
